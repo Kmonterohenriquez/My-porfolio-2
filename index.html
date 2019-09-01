@@ -18,24 +18,26 @@
     <title>Kevin Montero</title>
 </head>
 <body>
-        <div class="scroll">
+<div class="scroll">
     <header>
         <nav class="navbar">
             <div class="container">
               <img src="./img/my_logo.png" class="logo" alt="">
               <ul class="nav">
-                <li><a href="#project">Project</a></li>
-                <li><a href="#about">About</a></li>
-                <button class="resume-btn">
+                <li class="projectBtn"><a href="#project">Project</a></li>
+                <li class="aboutBtn"><a href="#about">About</a></li>
+                <li class="resumeBtn"><button class="resume-btn">
                     <a href="/files/resume.pdf" target="_blank">
                     Resume
-                    </a></button>
+                    </a></button></li>
                     <div class="menu-btn">
                         <div class="btn-line"></div>
                         <div class="btn-line"></div>
                         <div class="btn-line"></div>
                     </div>
+                
               </ul>
+              
               
             </div>
           </nav>
@@ -122,16 +124,16 @@
                         
                         <img class='project-img' src="/img/400x300.svg" alt="">
                         <div class="project-info">
-                            <button>Demo <i class="far fa-eye"></i></button>
-                            <button>Code <i class="fab fa-github"></i></button>
+                            <button><a href="#">Demo <i class="far fa-eye"></i></a></button>
+                            <button><a href="#">Code <i class="fab fa-github"></i></a></button>
                         </div>
                     </div>
                     <div class="project">
                         
                         <img class='project-img' src="/img/400x300.svg" alt="">
                         <div class="project-info">
-                            <button>Demo<i class="far fa-eye"></i></button>
-                            <button>Code <i class="fab fa-github"></i></button>
+                            <button><a href="#">Demo <i class="far fa-eye"></i></a></button>
+                            <button><a href="#">Code <i class="fab fa-github"></i></a></button>
                         </div>
                     </div>
                     
@@ -139,32 +141,32 @@
                         
                         <img class='project-img' src="/img/400x300.svg" alt="">
                         <div class="project-info">
-                            <button>Demo<i class="far fa-eye"></i></button>
-                            <button>Code<i class="fab fa-github"></i> </button>
+                            <button><a href="#">Demo <i class="far fa-eye"></i></a></button>
+                            <button><a href="#">Code <i class="fab fa-github"></i></a></button>
                         </div>
                     </div>
                     <div class="project">
                         
                         <img class='project-img' src="/img/400x300.svg" alt="">
                         <div class="project-info">
-                            <button>Demo<i class="far fa-eye"></i></button>
-                            <button>Code <i class="fab fa-github"></i></button>
+                            <button><a href="#">Demo <i class="far fa-eye"></i></a></button>
+                            <button><a href="#">Code <i class="fab fa-github"></i></a></button>
                         </div>
                     </div>
                     <div class="project">
                         
                         <img class='project-img' src="/img/400x300.svg" alt="">
                         <div class="project-info">
-                            <button>Demo<i class="far fa-eye"></i></button>
-                            <button>Code<i class="fab fa-github"></i> </button>
+                            <button><a href="#">Demo <i class="far fa-eye"></i></a></button>
+                            <button><a href="#">Code <i class="fab fa-github"></i></a></button>
                         </div>
                     </div>
                     <div class="project">
                         
                         <img class='project-img' src="/img/400x300.svg" alt="">
                         <div class="project-info">
-                            <button>Demo<i class="far fa-eye"></i></button>
-                            <button>Code<i class="fab fa-github"></i> </button>
+                            <button><a href="#">Demo <i class="far fa-eye"></i></a></button>
+                            <button><a href="#">Code <i class="fab fa-github"></i></a></button>
                         </div>
                     </div>
                     
@@ -212,7 +214,7 @@
                 </i>
         </section>
         </section>
-        </div>
+        
         <section class="reach-me" id="reachme">
             <div class="container">
                 <div class="reach-me-grid">
@@ -290,15 +292,20 @@
         <p class="copyright" stye>© 2019 Kevin Montero</p>
         
     </div>
+    <script src="./app.js"></script>
     <script src="./node_modules/sal.js/dist/sal.js"></script>
     <script>
+
     // Execute  Sal.js
         // sal();
         sal({
             threshold: 0.5,
             once: false,
         });
+    
+        
     </script>
+
 </body>
 </html>
 

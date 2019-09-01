@@ -1,0 +1,90 @@
+@media only screen and (max-width: 1100px) {
+  body {
+    background: red;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h1,
+  h3 {
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+  }
+  hr {
+    margin: 0 auto;
+  }
+  .menu-btn {
+    display: block;
+  }
+  ul li,
+  ul button {
+    visibility: hidden;
+  }
+  .showcase p {
+    text-align: center;
+  }
+  .aboutMe button {
+    margin: 0 auto;
+  }
+  .skill-container p {
+    text-align: center;
+  }
+  .contact .left-side .social-media {
+    display: none;
+  }
+  .contact-grid {
+        grid-template-areas: "left left left" "right right right";
+  }
+  .contact-grid .left-side {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: left;
+  }
+  .contact-grid .right-side {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: right;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+  .navbar .nav li a,
+  .navbar .nav button {
+    display: none;
+    visibility: hidden;
+  }
+  .reach-me-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(600px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 50px;
+  }
+  .aboutMe .aboutMe-grid {
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .reach-me .reach-me-grid {
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .reach-me .reach-me-grid .right-side {
+    text-align: center;
+  }
+  .reach-me .reach-me-grid .right-side i {
+    padding: 20px;
+    color: #666;
+    font-size: 2rem;
+  }
+  .contact-grid {
+        grid-template-areas: "left left left" "right right right";
+  }
+}
+/*# sourceMappingURL=Media.css.map */

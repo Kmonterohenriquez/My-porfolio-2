@@ -1,0 +1,133 @@
+@media only screen and (max-width: 1100px) {
+	body{ background: red;}
+	// General
+	h1 {
+		font-size: 2rem;
+	}
+	h1,
+	h3 {
+		text-align: center;
+	}
+	p {
+		font-size: 1rem;
+	}
+	hr {
+		margin: 0 auto;
+	}
+	// Nav bar
+	.menu-btn {
+		display: block;
+	}
+	
+	ul li,
+	ul button {
+		visibility: hidden;
+	}
+	// Ends Nav bar
+	// Showcase
+	.showcase {
+		p {
+			text-align: center;
+		}
+	}
+	// Ends
+	// About Me
+	.aboutMe button {
+		margin: 0 auto;
+	}
+	// Ends
+	// Skills
+	.skill-container {
+		p {
+			text-align: center;
+		}
+	}
+	// Ends
+
+	// Contact Section
+	.contact .left-side {
+		.social-media{
+			display: none;
+		}
+	}
+	
+	// Ends
+	.contact-grid {
+		grid-template-areas:
+		 "left left left"
+		 "right right right";
+		 .left-side {
+			grid-area: left;
+		}
+		.right-side {
+			grid-area: right;
+		}
+	}
+}
+
+// .mobile-menu{
+// 	z-index: 90;
+// 	position: absolute;
+// 	top: 0;
+// 	right: 0;
+// 	height: 50%;
+// 	width: 50%;
+// 	background: black;
+// 	animation: circle 8s ease-in-out;
+// 	clip-path: circle(55% at 90% 5%);
+	
+	
+// 	@keyframes circle {
+// 		from {clip-path: circle(0% at 90% 5%);}
+// 		to {clip-path: circle(55% at 100% 0%);}
+		
+// 	}
+// }
+
+@media (max-width: 400px) {
+	// General
+		.container {
+			width: 100%;
+		}
+
+	.navbar .nav li a,
+	.navbar .nav button {
+		display: none;
+		visibility: hidden;
+	}
+
+
+	.reach-me-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+		grid-gap: 50px;
+	}
+
+	.aboutMe{
+		.aboutMe-grid {
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		}
+		
+	}
+	.reach-me {
+	.reach-me-grid {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		.right-side {
+			text-align: center;
+			i {
+				padding: 20px;
+				color: #666;
+				font-size: 2rem;
+
+			}
+		}
+		
+	}
+	}
+
+
+	.contact-grid {
+		grid-template-areas: "left left left"
+		"right right right";
+	}
+}
