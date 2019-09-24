@@ -21,11 +21,6 @@ body.menuActivated {
   overflow: hidden;
 }
 
-.scrlol {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-
 .mb-0 {
   margin-bottom: 5px;
 }
@@ -353,6 +348,11 @@ p {
 
 .aboutMe .aboutMe-grid button:hover {
   background-color: #0a80b9;
+}
+
+.aboutMe .aboutMe-grid button a {
+  text-decoration: none;
+  color: white;
 }
 
 .gray-bg {
